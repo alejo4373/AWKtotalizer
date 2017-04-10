@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<title>Login - Free Bread, Inc.</title>
+	<!--[if lt IE 9]>
+	<script src="/html5shiv.min.js" type="text/javascript"></script>
+	<script src="/selectivizr-min.js" type="text/javascript"></script>
+	<![endif]-->
+	<link href="/assets/wholesale-e32454e551c9d987b85e04cbbc0eceae.css" media="screen" rel="stylesheet" />
+	<script src="/assets/application-f693c701a8d5f356c151764107f4bc2b.js"></script>
+	<link rel="shortcut icon"  type='image/x-icon' href="/favicon-16.ico">
+	<meta name="google" value="notranslate">
+	<meta http-equiv="Content-Language" content="en">
+	<style media="screen">
+	.site { background-color: #b8a78f }
+	.page-header { background-color: #ffffff }
+	.page-header { color: #666666 }
+	.page-footer { background-color: #ffffff }
+	.page-footer { color: #666666 }
+	.page-content { background-color: #ffffff }
+	.page-header .caret {border-top-color: #666666}
+	.page-header hr {background-color: #666666}
+	.page-footer hr {background-color: #666666}
+body {background-color : #b8a78f;}
+</style>
+
+	</head>
+	<body class="login-page site">
+		<section class="signup-login login ">
+	<!--[if lt IE 8]>
+<section class="ie-error">
+	<div class="alert alert-error">
+	<h2>Sorry, your browser is not supported</h2>
+	<p>We are using the latest web technologies for a better user experience. Manifest works great in these browsers:</p>
+	<ul>
+		<li><a href="https://www.google.com/chrome" target="_blank">Google Chrome</a></li>
+		<li><a href="http://www.mozilla.org/en-US/firefox/new/" target="_blank">Firefox</a></li>
+		<li><a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home" target="_blank">Internet Explorer 8 or above</a></li>
+		<li><a href="http://www.apple.com/safari/" target="_blank">Safari</a></li>
+	</ul>
+	<p>Please take a moment to upgrade or switch to one of the other browsers, it is worth it!</p>
+	</div>
+</section>
+<![endif]-->
+	<form action="/login" class="login" method="post">
+		<header class="page-header"><a href="/"><img src="/accounts/freebread/images/FreeBreadLogo_v1.png" alt="Free Bread, Inc."></a></header>
+		<section class="intro"><p>Welcome to our new fancy wholesale portal.  </p></section>
+		<section>
+			
+			<fieldset>
+       <label>Email</label><input name="login" type="text" value="" class="initial-focus">
+			</fieldset>
+			<fieldset>
+       <label>Password</label><input name="password" type="password">
+			</fieldset>
+			<button type="submit" class="btn">Sign In</button>
+			<a href="/forgot-password" class="forgot-password-link">Forgot your password?</a>
+			<a href="/signup" class="signup-link">New customer signup</a> 
+		</section>
+	</form>
+</section>
+	</body>
+</html>

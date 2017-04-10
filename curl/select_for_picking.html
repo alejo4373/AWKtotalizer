@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select For Picking - Free Bread, Inc.</title>
+		<!--[if lt IE 9]>
+		<script src="/html5shiv.min.js"></script>
+		<script src="/selectivizr-min.js"></script>
+		<![endif]-->
+    <link href="/assets/admin-82046851a3acbb1459f2f01824b0a1b1.css" media="all" rel="stylesheet" />
+    
+		<script src="/assets/admin-5986997bb58ac4fecebeb0256a3f0309.js"></script>
+  	<meta content="authenticity_token" name="csrf-param" />
+<meta content="eohjXSw5d9jUoWVI2FFLPyPF8G5nptb1TUuQG8mY8oo=" name="csrf-token" />
+	<meta name="viewport" content="width=1024">
+	<meta name="google" value="notranslate">
+	<meta http-equiv="Content-Language" content="en">
+	<link rel="shortcut icon"  type='image/x-icon' href="/favicon-16.ico">
+</head>
+<body class="orders-select_for_picking">
+<div class="center">
+    <div class="page-header">
+        <ul class="account-nav">
+					<li class="nav-item account-name">Free Bread, Inc.</li>
+					<li class="nav-item"><a href="#" class="support-link">Support</a></li>
+					<li class="nav-item"><a href="/" target="_customer">Customer View</a></li>
+					<li class="nav-item"><a href="/admin/account">Your Account</a></li>
+					<li class="nav-item"><a href="/logout">Log out</a></li>
+        </ul>
+				<h1 class="logo"></h1>
+    </div>
+	<div class="page-content">
+	    <ul class="main-nav">
+			
+			<li class="nav-orders"><a href="/admin/orders">Orders<span class="badge">2</span></a></li>
+			<li class="nav-dispatch selected"><a href="/admin/orders/select_for_picking">Dispatch<span class="badge">11</span></a></li>
+			<li class="nav-customers"><a href="/admin/customers">Customers</a></li>
+			<li class="nav-products subnav-heading"><a href="/admin/products">Products</a></li>
+			<li class="nav-settings subnav-heading"><a href="/admin/settings">Settings</a></li>
+			<li class="nav-reports"><a href="/admin/reporting">Reports</a></li>
+      <li class="nav-addons"><a href="/admin/add-ons">Add-Ons</a></li>
+			
+	    </ul>
+
+	    <div class="content">
+	        <script>
+	var on_hand   = {'BAC9-W': 0,'GBAC9-W': 0,'HB-DZ-W-W': 0,'GRI-W': 0,'MIN-MOX-W': 0,'MOX-W': 0,'MOX-UNS-W': 0,'CHM-W': 0,'CUA-W-6': 0};
+	var remaining = {'BAC9-W': 0,'GBAC9-W': 0,'HB-DZ-W-W': 0,'GRI-W': 0,'MIN-MOX-W': 0,'MOX-W': 0,'MOX-UNS-W': 0,'CHM-W': 0,'CUA-W-6': 0};
+</script>
+
+<div class="content-header">
+	<div class="secondary-actions">
+		<a href="/admin/orders/delivery_notes">Delivery Notes</a>
+	</div>	
+	<h1>Dispatch / Picking</h1>
+</div>
+<div class="inner-content">
+
+	<div class="form-template" id="picking-status-full">
+		<span class="status">Available Stock: <span class="full">Yes <a href="#" class="btn pick-all">Pick All</a></span></span>
+	</div>
+	<div class="form-template" id="picking-status-part">
+		<span class="status">Available Stock: <span class="part">Partial <a href="#" class="btn">Pick From Stock</a></span><span class="none"> <a href="#" class="btn pick-all">Pick All</a></span>
+	</div>
+	<div class="form-template" id="picking-status-none">
+		<span class="status">Available Stock: <span class="none">No <a href="#" class="btn pick-all">Pick All</a></span></span>
+	</div>
+	<form accept-charset="UTF-8" action="/admin/orders/select_for_picking" id="select-for-picking" method="post"><div style="display:none"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="eohjXSw5d9jUoWVI2FFLPyPF8G5nptb1TUuQG8mY8oo=" /></div>
+		<div class="buttons-top">
+			<button type="submit" class="btn right">Save Picking List <span class="glyphicon glyphicon-arrow-right"></span></button>
+		</div>
+		<div class="select-for-picking-order inactive-order">
+			<div class="picking-order-status">
+			</div>
+			<h2><a href="https://freebread.manifesthq.com/admin/orders/2585">2585 <span class="order-name">Rainforest Organics</span></a> <span class="order-age">6 days old</span></h2>
+		  <table class="select-for-picking grid-edit">
+				<thead>
+					<tr>
+						<th class="picking-sku">Code</th>
+						<th>Description</th>
+						<th class="picking-available c">Available</th>
+						<th class="picking-required c">Required</th>
+						<th class="picking-to-pick">To Pick</th>
+					</tr>
+				</thead>
+				<tbody>
+						<tr><td colspan="5" class="order-grouping-heading">CASE PACK ORDERING</td></tr>
+					<tr class="picking-row row-BAC9-W picking-no" data-precision="0">
+						<td class="sku">BAC9-W</td>
+						<td class="description">RETAIL MOXY BACHELOR PACK- 9 x 6-SLICE UNITS <span class="options"></span></td>
+						<td class="available c" data-allocated="BAC9-W">0</td>
+						<td class="required c">70</td>
+						
+						<td class="picking-to-pick editable"><input class="picking" data-required="70" data-sku="BAC9-W" id="order_items_308648_picking" name="order_items[308648][picking]" size="4" type="text" value="" /></td>
+					</tr>
+					<tr class="picking-row row-GBAC9-W picking-no" data-precision="0">
+						<td class="sku">GBAC9-W</td>
+						<td class="description">RETAIL GRINGO BACHELOR PACK- 9 x 6-SLICE UNITS <span class="options"></span></td>
+						<td class="available c" data-allocated="GBAC9-W">0</td>
+						<td class="required c">40</td>
+						
+						<td class="picking-to-pick editable"><input class="picking" data-required="40" data-sku="GBAC9-W" id="order_items_308646_picking" name="order_items[308646][picking]" size="4" type="text" value="" /></td>
+					</tr>
+				</tbody>
+		  </table>
+		</div>
+		<div class="select-for-picking-order inactive-order">
+			<div class="picking-order-status">
+			</div>
+			<h2><a href="https://freebread.manifesthq.com/admin/orders/2622">2622 <span class="order-name">Facebook - AP</span></a> <span class="order-age">1 day old</span></h2>
+		  <table class="select-for-picking grid-edit">
+				<thead>
+					<tr>
+						<th class="picking-sku">Code</th>
+						<th>Description</th>
+						<th class="picking-available c">Available</th>
+						<th class="picking-required c">Required</th>
+						<th class="picking-to-pick">To Pick</th>
+					</tr>
+				</thead>
+				<tbody>
+						<tr><td colspan="5" class="order-grouping-heading">Featured Products</td></tr>
+					<tr class="picking-row row-MOX-W picking-no" data-precision="0">
+						<td class="sku">MOX-W</td>
+						<td class="description">MOXY PULLMAN- SINGLE LOAF - 28 SLICES <span class="options">Choice Of Slice: SLICED</span></td>
+						<td class="available c" data-allocated="MOX-W">0</td>
+						<td class="required c">5</td>
+						
+						<td class="picking-to-pick editable"><input class="picking" data-required="5" data-sku="MOX-W" id="order_items_316000_picking" name="order_items[316000][picking]" size="4" type="text" value="" /></td>
+					</tr>
+					<tr class="picking-row row-GRI-W picking-no" data-precision="0">
+						<td class="sku">GRI-W</td>
+						<td class="description">GRINGO PULLMAN- SINGLE LOAF (28 SLICES) <span class="options">Choice Of Slice: SLICED</span></td>
+						<td class="available c" data-allocated="GRI-W">0</td>
+						<td class="required c">5</td>
+						
+						<td class="picking-to-pick editable"><input class="picking" data-required="5" data-sku="GRI-W" id="order_items_315999_picking" name="order_items[315999][picking]" size="4" type="text" value="" /></td>
+					</tr>
+				</tbody>
+		  </table>
+		</div>
+		<div class="select-for-picking-order inactive-order">
+			<div class="picking-order-status">
+			</div>
+			<h2><a href="https://freebread.manifesthq.com/admin/orders/2623">2623 <span class="order-name">Late Night with Stephen Colbert o/b/o Amy Schwartz </span></a> <span class="order-age">1 day old</span></h2>
+		  <table class="select-for-picking grid-edit">
+				<thead>
+					<tr>
+						<th class="picking-sku">Code</th>
+						<th>Description</th>
+						<th class="picking-available c">Available</th>
+						<th class="picking-required c">Required</th>
+						<th class="picking-to-pick">To Pick</th>
+					</tr>
+				</thead>
+				<tbody>
+						<tr><td colspan="5" class="order-grouping-heading">CASE PACK ORDERING</td></tr>
+					<tr class="picking-row row-BAC9-W picking-no" data-precision="0">
+						<td class="sku">BAC9-W</td>
+						<td class="description">RETAIL MOXY BACHELOR PACK- 9 x 6-SLICE UNITS <span class="options"></span></td>
+						<td class="available c" data-allocated="BAC9-W">0</td>
+						<td class="required c">1</td>
+						
+						<td class="picking-to-pick editable"><input class="picking" data-required="1" data-sku="BAC9-W" id="order_items_316002_picking" name="order_items[316002][picking]" size="4" type="text" value="" /></td>
+					</tr>
+				</tbody>
+		  </table>
+		</div>
+		<div class="select-for-picking-order inactive-order">
+			<div class="picking-order-status">
+			</div>
+			<h2><a href="https://freebread.manifesthq.com/admin/orders/2624">2624 <span class="order-name">BIMMYS</span></a> <span class="order-age">1 day old</span></h2>
+		  <table class="select-for-picking grid-edit">
+				<thead>
+					<tr>
+						<th class="picking-sku">Code</th>
+						<th>Description</th>
+						<th class="picking-available c">Available</th>
+						<th class="picking-required c">Required</th>
+						<th class="picking-to-pick">To Pick</th>
+					</tr>
+				</thead>
+				<tbody>
+						<tr><td colspan="5" class="order-grouping-heading">FOODSERVICE ONLY </td></tr>
+					<tr class="picking-row row-MOX-UNS-W picking-no" data-precision="0">
+						<td class="sku">MOX-UNS-W</td>
+						<td class="description">MOXY PULLMAN- SINGLE LOAF - 28 SLICES <span class="options">Choice Of Slice: UNSLICED</span></td>
+						<td class="available c" data-allocated="MOX-UNS-W">0</td>
+						<td class="required c">10</td>
+						
+						<td class="picking-to-pick editable"><input class="picking" data-required="10" data-sku="MOX-UNS-W" id="order_items_316004_picking" name="order_items[316004][picking]" size="4" type="text" value="" /></td>
+					</tr>
+				</tbody>
+		  </table>
+		</div>
+		<div class="select-for-picking-order inactive-order">
+			<div class="picking-order-status">
+			</div>
+			<h2><a href="https://freebread.manifesthq.com/admin/orders/2625">2625 <span class="order-name">Cafe Cluny</span></a> <span class="order-age">1 day old</span></h2>
+		  <table class="select-for-picking grid-edit">
+				<thead>
+					<tr>
+						<th class="picking-sku">Code</th>
+						<th>Description</th>
+						<th class="picking-available c">Available</th>
+						<th class="picking-required c">Required</th>
+						<th class="picking-to-pick">To Pick</th>
+					</tr>
+				</thead>
+				<tbody>
+						<tr><td colspan="5" class="order-grouping-heading">FOODSERVICE ONLY </td></tr>
+					<tr class="picking-row row-MOX-W picking-no" data-precision="0">
+						<td class="sku">MOX-W</td>
+						<td class="description">MOXY PULLMAN- SINGLE LOAF - 28 SLICES <span class="options">Choice Of Slice: SLICED</span></td>
+						<td class="available c" data-allocated="MOX-W">0</td>
+						<td class="required c">6</td>
+						
+						<td class="picking-to-pick editable"><input class="picking" data-required="6" data-sku="MOX-W" id="order_items_316006_picking" name="order_items[316006][picking]" size="4" type="text" value="" /></td>
+					</tr>
+				</tbody>
+		  </table>
+		</div>
+		<div class="select-for-picking-order inactive-order">
+			<div class="picking-order-status">
+			</div>
+			<h2><a href="https://freebread.manifesthq.com/admin/orders/2626">2626 <span class="order-name">Springbone Kitchen</span></a> <span class="order-age">1 day old</span></h2>
+		  <table class="select-for-picking grid-edit">
+				<thead>
+					<tr>
+						<th class="picking-sku">Code</th>
+						<th>Description</th>
+						<th class="picking-available c">Available</th>
+						<th class="picking-required c">Required</th>
+						<th class="picking-to-pick">To Pick</th>
+					</tr>
+				</thead>
+				<tbody>
+						<tr><td colspan="5" class="order-grouping-heading">FOODSERVICE ONLY </td></tr>
+					<tr class="picking-row row-HB-DZ-W-W picking-no" data-precision="0">
+						<td class="sku">HB-DZ-W-W</td>
+						<td class="description">HAMBURGER BUNS- 1 DZ <span class="options"></span></td>
+						<td class="available c" data-allocated="HB-DZ-W-W">0</td>
+						<td class="required c">3</td>
+						
+						<td class="picking-to-pick editable"><input class="picking" data-required="3" data-sku="HB-DZ-W-W" id="order_items_316008_picking" name="order_items[316008][picking]" size="4" type="text" value="" /></td>
+					</tr>
+						<tr><td colspan="5" class="order-grouping-heading">RETAIL-READY PRODUCTS ONLY</td></tr>
+					<tr class="picking-row row-CHM-W picking-no" data-precision="0">
+						<td class="sku">CHM-W</td>
+						<td class="description">RETAIL MOXY HALF LOAF- 6 x 14-SLICE UNITS <span class="options"></span></td>
+						<td class="available c" data-allocated="CHM-W">0</td>
+						<td class="required c">2</td>
+						
+						<td class="picking-to-pick editable"><input class="picking" data-required="2" data-sku="CHM-W" id="order_items_316009_picking" name="order_items[316009][picking]" size="4" type="text" value="" /></td>
+					</tr>
+				</tbody>
+		  </table>
+		</div>
+		<div class="select-for-picking-order inactive-order">
+			<div class="picking-order-status">
+			</div>
+			<h2><a href="https://freebread.manifesthq.com/admin/orders/2629">2629 <span class="order-name">Little Beet Table</span></a> <span class="order-age">1 day old</span></h2>
+		  <table class="select-for-picking grid-edit">
+				<thead>
+					<tr>
+						<th class="picking-sku">Code</th>
+						<th>Description</th>
+						<th class="picking-available c">Available</th>
+						<th class="picking-required c">Required</th>
+						<th class="picking-to-pick">To Pick</th>
+					</tr>
+				</thead>
+				<tbody>
+						<tr><td colspan="5" class="order-grouping-heading">FOODSERVICE ONLY </td></tr>
+					<tr class="picking-row row-GRI-W picking-no" data-precision="0">
+						<td class="sku">GRI-W</td>
+						<td class="description">GRINGO PULLMAN- SINGLE LOAF (28 SLICES) <span class="options">Choice Of Slice: SLICED</span></td>
+						<td class="available c" data-allocated="GRI-W">0</td>
+						<td class="required c">10</td>
+						
+						<td class="picking-to-pick editable"><input class="picking" data-required="10" data-sku="GRI-W" id="order_items_316016_picking" name="order_items[316016][picking]" size="4" type="text" value="" /></td>
+					</tr>
+					<tr class="picking-row row-HB-DZ-W-W picking-no" data-precision="0">
+						<td class="sku">HB-DZ-W-W</td>
+						<td class="description">HAMBURGER BUNS- 1 DZ <span class="options"></span></td>
+						<td class="available c" data-allocated="HB-DZ-W-W">0</td>
+						<td class="required c">4</td>
+						
+						<td class="picking-to-pick editable"><input class="picking" data-required="4" data-sku="HB-DZ-W-W" id="order_items_316017_picking" name="order_items[316017][picking]" size="4" type="text" value="" /></td>
+					</tr>
+				</tbody>
+		  </table>
+		</div>
+		<div class="select-for-picking-order inactive-order">
+			<div class="picking-order-status">
+			</div>
+			<h2><a href="https://freebread.manifesthq.com/admin/orders/2630">2630 <span class="order-name">Vaucluse</span></a> <span class="order-age">about 7 hours old</span></h2>
+		  <table class="select-for-picking grid-edit">
+				<thead>
+					<tr>
+						<th class="picking-sku">Code</th>
+						<th>Description</th>
+						<th class="picking-available c">Available</th>
+						<th class="picking-required c">Required</th>
+						<th class="picking-to-pick">To Pick</th>
+					</tr>
+				</thead>
+				<tbody>
+						<tr><td colspan="5" class="order-grouping-heading">FOODSERVICE ONLY </td></tr>
+					<tr class="picking-row row-MOX-W picking-no" data-precision="0">
+						<td class="sku">MOX-W</td>
+						<td class="description">MOXY PULLMAN- SINGLE LOAF - 28 SLICES <span class="options">Choice Of Slice: SLICED</span></td>
+						<td class="available c" data-allocated="MOX-W">0</td>
+						<td class="required c">5</td>
+						
+						<td class="picking-to-pick editable"><input class="picking" data-required="5" data-sku="MOX-W" id="order_items_316789_picking" name="order_items[316789][picking]" size="4" type="text" value="" /></td>
+					</tr>
+					<tr class="picking-row row-GRI-W picking-no" data-precision="0">
+						<td class="sku">GRI-W</td>
+						<td class="description">GRINGO PULLMAN- SINGLE LOAF (28 SLICES) <span class="options">Choice Of Slice: SLICED</span></td>
+						<td class="available c" data-allocated="GRI-W">0</td>
+						<td class="required c">5</td>
+						
+						<td class="picking-to-pick editable"><input class="picking" data-required="5" data-sku="GRI-W" id="order_items_316788_picking" name="order_items[316788][picking]" size="4" type="text" value="" /></td>
+					</tr>
+				</tbody>
+		  </table>
+		</div>
+		<div class="select-for-picking-order inactive-order">
+			<div class="picking-order-status">
+			</div>
+			<h2><a href="https://freebread.manifesthq.com/admin/orders/2631">2631 <span class="order-name">The End Brooklyn</span></a> <span class="order-age">about 7 hours old</span></h2>
+		  <table class="select-for-picking grid-edit">
+				<thead>
+					<tr>
+						<th class="picking-sku">Code</th>
+						<th>Description</th>
+						<th class="picking-available c">Available</th>
+						<th class="picking-required c">Required</th>
+						<th class="picking-to-pick">To Pick</th>
+					</tr>
+				</thead>
+				<tbody>
+						<tr><td colspan="5" class="order-grouping-heading">FOODSERVICE ONLY </td></tr>
+					<tr class="picking-row row-MOX-W picking-no" data-precision="0">
+						<td class="sku">MOX-W</td>
+						<td class="description">MOXY PULLMAN- SINGLE LOAF - 28 SLICES <span class="options">Choice Of Slice: SLICED</span></td>
+						<td class="available c" data-allocated="MOX-W">0</td>
+						<td class="required c">7</td>
+						
+						<td class="picking-to-pick editable"><input class="picking" data-required="7" data-sku="MOX-W" id="order_items_316791_picking" name="order_items[316791][picking]" size="4" type="text" value="" /></td>
+					</tr>
+				</tbody>
+		  </table>
+		</div>
+		<div class="select-for-picking-order inactive-order">
+			<div class="picking-order-status">
+			</div>
+			<h2><a href="https://freebread.manifesthq.com/admin/orders/2632">2632 <span class="order-name">PRESS SHOP</span></a> <span class="order-age">about 3 hours old</span></h2>
+		  <table class="select-for-picking grid-edit">
+				<thead>
+					<tr>
+						<th class="picking-sku">Code</th>
+						<th>Description</th>
+						<th class="picking-available c">Available</th>
+						<th class="picking-required c">Required</th>
+						<th class="picking-to-pick">To Pick</th>
+					</tr>
+				</thead>
+				<tbody>
+						<tr><td colspan="5" class="order-grouping-heading">FOODSERVICE ONLY </td></tr>
+					<tr class="picking-row row-CUA-W-6 picking-no" data-precision="0">
+						<td class="sku">CUA-W-6</td>
+						<td class="description">CUADRADOS - 1 DZ  <span class="options">Size: 6&#39;&#39;</span></td>
+						<td class="available c" data-allocated="CUA-W-6">0</td>
+						<td class="required c">6</td>
+						
+						<td class="picking-to-pick editable"><input class="picking" data-required="6" data-sku="CUA-W-6" id="order_items_316865_picking" name="order_items[316865][picking]" size="4" type="text" value="" /></td>
+					</tr>
+				</tbody>
+		  </table>
+		</div>
+		<div class="select-for-picking-order inactive-order">
+			<div class="picking-order-status">
+			</div>
+			<h2><a href="https://freebread.manifesthq.com/admin/orders/2633">2633 <span class="order-name">Tom Cat Bakery</span></a> <span class="order-age">about 1 hour old</span></h2>
+		  <table class="select-for-picking grid-edit">
+				<thead>
+					<tr>
+						<th class="picking-sku">Code</th>
+						<th>Description</th>
+						<th class="picking-available c">Available</th>
+						<th class="picking-required c">Required</th>
+						<th class="picking-to-pick">To Pick</th>
+					</tr>
+				</thead>
+				<tbody>
+						<tr><td colspan="5" class="order-grouping-heading">FOODSERVICE ONLY </td></tr>
+					<tr class="picking-row row-MOX-W picking-no" data-precision="0">
+						<td class="sku">MOX-W</td>
+						<td class="description">MOXY PULLMAN- SINGLE LOAF - 28 SLICES <span class="options">Choice Of Slice: SLICED</span></td>
+						<td class="available c" data-allocated="MOX-W">0</td>
+						<td class="required c">18</td>
+						
+						<td class="picking-to-pick editable"><input class="picking" data-required="18" data-sku="MOX-W" id="order_items_316986_picking" name="order_items[316986][picking]" size="4" type="text" value="" /></td>
+					</tr>
+					<tr class="picking-row row-GRI-W picking-no" data-precision="0">
+						<td class="sku">GRI-W</td>
+						<td class="description">GRINGO PULLMAN- SINGLE LOAF (28 SLICES) <span class="options">Choice Of Slice: SLICED</span></td>
+						<td class="available c" data-allocated="GRI-W">0</td>
+						<td class="required c">1</td>
+						
+						<td class="picking-to-pick editable"><input class="picking" data-required="1" data-sku="GRI-W" id="order_items_316988_picking" name="order_items[316988][picking]" size="4" type="text" value="" /></td>
+					</tr>
+					<tr class="picking-row row-HB-DZ-W-W picking-no" data-precision="0">
+						<td class="sku">HB-DZ-W-W</td>
+						<td class="description">HAMBURGER BUNS- 1 DZ <span class="options"></span></td>
+						<td class="available c" data-allocated="HB-DZ-W-W">0</td>
+						<td class="required c">3</td>
+						
+						<td class="picking-to-pick editable"><input class="picking" data-required="3" data-sku="HB-DZ-W-W" id="order_items_316987_picking" name="order_items[316987][picking]" size="4" type="text" value="" /></td>
+					</tr>
+					<tr class="picking-row row-MIN-MOX-W picking-no" data-precision="0">
+						<td class="sku">MIN-MOX-W</td>
+						<td class="description">MINIS:  MOXY, MILLET OAT &amp; FLAX, 1 DZ <span class="options"></span></td>
+						<td class="available c" data-allocated="MIN-MOX-W">0</td>
+						<td class="required c">1</td>
+						
+						<td class="picking-to-pick editable"><input class="picking" data-required="1" data-sku="MIN-MOX-W" id="order_items_316989_picking" name="order_items[316989][picking]" size="4" type="text" value="" /></td>
+					</tr>
+						<tr><td colspan="5" class="order-grouping-heading">CASE PACK ORDERING</td></tr>
+					<tr class="picking-row row-BAC9-W picking-no" data-precision="0">
+						<td class="sku">BAC9-W</td>
+						<td class="description">RETAIL MOXY BACHELOR PACK- 9 x 6-SLICE UNITS <span class="options"></span></td>
+						<td class="available c" data-allocated="BAC9-W">0</td>
+						<td class="required c">7</td>
+						
+						<td class="picking-to-pick editable"><input class="picking" data-required="7" data-sku="BAC9-W" id="order_items_316990_picking" name="order_items[316990][picking]" size="4" type="text" value="" /></td>
+					</tr>
+				</tbody>
+		  </table>
+		</div>
+	  <button type="submit" class="btn right">Save Picking List <span class="glyphicon glyphicon-arrow-right"></span></button>
+</form></div>
+
+	    </div>
+	</div>
+	<div class="page-footer"></div>
+	<div id="support-dialog" class="modal">
+		<form id="support-form" action="/admin/support" method="post">
+			<div class="modal-header">
+		    <a href="#" class="close" data-dismiss="modal" aria-hidden="true">×</a>
+		    <h3>Manifest Support and Feedback</h3>
+		  </div>
+		  <div class="modal-body">
+				<div class="form-body input-form">
+					<fieldset>
+						<label>Your Email</label>
+						<input type="text" name="support[reply_to]" value="haroldo@freebreadinc.com">
+					</fieldset>
+					<fieldset>
+						<label>Your Message</label>
+						<textarea name="support[message]" id="support-message"></textarea>
+					</fieldset>
+					<button type="submit" class="btn">Send Message</button>
+				</div>
+				<div class="result hide">
+					<p>Thank you, your message has been sent.</p>
+					<button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>
+				</div>
+		  </div>
+		</form>
+	</div>
+</div>
+</body>
+</html>
